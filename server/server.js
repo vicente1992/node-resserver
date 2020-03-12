@@ -10,7 +10,9 @@ const mongoose = require('mongoose');
 app.use(bodyPaerser.urlencoded({ extended: false }));
 app.use(bodyPaerser.json());
 
-app.use(require('./routes/usuario'));
+//Configuraciín global de rutas
+app.use(require('./routes/index'));
+
 
 
 
